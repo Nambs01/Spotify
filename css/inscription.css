@@ -1,0 +1,126 @@
+    @font-face{
+    font-family:Quicksand;
+    src: url("../font-family/Lato-Regular.ttf");
+
+    /* src:url(Inconsolata-VariableFont_wdth,wght.ttf); */
+}
+:root{
+--background-body:#e0e0e4;
+}
+
+body{
+    background-color: var(--background-body);
+    margin-bottom:200px;
+    font-family: Quicksand ,Helvetica, Arial, sans-serif;
+}
+.all{
+    padding:20px;
+    width:500px;
+    position:absolute;
+    left:50%;
+    top:60px;
+    transform:translateX(-50%);
+    box-shadow: -8px -8px 10px #fff,
+     3px 3px 10px rgba(0,0,0,0.6),
+    -1px -1px 10px rgba(0,0,0,0.2),
+    1px 1px 10px #fff,
+    -8px -8px 10px #fff inset,
+     2px 2px 10px rgba(0,0,0,0.3) inset ;
+    border-radius:10px 10px 10px 10px
+}
+header{
+    text-align:center;
+}
+/*----FACEBOOK*/
+.facebook{
+    margin:20px 50px 20px 50px;
+    padding:10px;
+    height:30px;
+    text-align:center;
+    background: #405A93 ; 
+    border-radius: 40px;
+    cursor:pointer;
+    font-size:15px;
+    font-family:Quicksand;
+    font-weight:400;
+    box-shadow: -6px -5px 10px #fff,
+    3px 3px 8px rgba(0,0,0,0.6);
+    /*PROPRIETE FLEX*/
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.facebook:hover{
+    transform:scale(1.05);
+    transition: all 0.3s ease-in-out;
+}.facebook:active{
+    transform:scale(1);
+    box-shadow: 4px 4px 10px #fff,
+    -3px -3px 8px rgba(0,0,0,0.6);
+
+}
+.lien-vers-facebook{
+    display:inline-block;
+}
+.facebook a{
+    color:white;
+    line-height: 30px;
+    text-decoration:none;
+}
+.facebook img{
+    margin-right:18px;
+    width:35px;
+}
+
+.facebook .icon-facebook{
+    display:inline;
+}
+
+/*-----GOOGLE----*/
+.google{
+    margin:20px 50px 20px 50px;
+    padding:10px;
+    height:30px;
+    line-height: 30px;
+    text-align:center;
+    border: 2px solid rgba(15, 15, 15, 0.856);
+    border-radius: 40px;
+    cursor:pointer;
+    box-shadow: -6px -5px 10px #fff,
+    3px 3px 8px rgba(0,0,0,0.6);
+
+    /*PROPRIETE FLEX*/
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background:#dbdbdb;
+    transition: all 0.3s ease-in-out;
+}
+
+.google:hover{
+    transform:scale(1.05);
+    transition: all 0.3s ease-in-out;
+}.google:active{
+    transform:scale(1);
+    box-shadow: 4px 4px 10px #fff,
+    -3px -3px 8px rgba(0,0,0,0.6);
+}
+.google a{
+    color:rgb(0, 0, 0);
+    text-decoration:none;
+}
+
+.google img{
+    margin-right:18px;
+}
+.ligne{
+    margin:10px;
+    width:210px;
+    height:1px;
+    position:relative;
+    top:5px;
+    display: inline-block;
+    background:rgba(0,0,0,0.4);
+}

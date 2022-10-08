@@ -1,0 +1,221 @@
+*{
+ padding: 0px;
+ margin: 0px;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: darkgoldenrod;
+    height: 70px;
+    display: flex;
+}
+
+header .image{
+    width: 25px;
+    height: 25px;
+    display:inline;
+    padding-top: 0px;
+    /* vertical-align:middle; */
+}
+
+header p{
+    font-size: 30px;
+    margin-top: 10px;
+    padding-top: 0px;
+    padding-left: 50px;
+    background-color: darkgoldenrod;
+    color: white;
+}
+
+header nav ul li,a{
+    display: inline;
+    color: white;
+}
+
+header nav{
+    word-spacing: 30px;
+    text-indent: 550px;
+}
+/*--------------------------------------------------------------------------------------------------------------*/
+
+.section1{
+    /* margin:0px; */
+    background-image: url('../image/back-assistance.webp');
+    width: 100%;
+    height:450px;
+    color:#fff;
+    padding-top:5%;
+    line-height: 40px;
+    text-align:center;
+}
+
+.section1 h1{
+    font-size: 50px;
+    line-height: 1em;
+    margin: auto;
+    padding-bottom: 50px;
+    width: 800px;
+}
+
+.section1 input{
+    width:40%;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+    border: none;
+    outline: none;
+}
+
+.section1 input::placeholder{
+    font-size: 20px;
+    text-align: center;
+}
+
+.section1 input:focus{
+    font-size: 20px;
+    text-align: center;
+    color:rgba(255, 255, 255, 0.7);
+}
+
+.section1 .tableau{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.section1 .tableau h2{
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: #adabab;
+    font-size: 12px;
+}
+.section1 .tableau .voalohany a{
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.section1 .tableau .voalohany a:hover{
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.section1 .tableau .voalohany{
+    margin-right: 20px;
+    line-height: 1.5em;
+
+
+}
+
+/*--------------------------------------------------------------------------------------------------------------*/
+.section2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgb(221, 217, 217);    
+}
+
+.section2 a{
+    text-decoration: none;
+    color: #117a37;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.section2 a:hover{
+    color: #117a37;
+    text-decoration: underline;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.section2 .ligne1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 20px;
+    
+}
+
+.section2 .ligne2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.section2 .carte{
+    margin-right: 30px;
+}
+
+.section2 h2{
+    color: #000;
+    width: 350px;
+}
+
+/*--------------------------------------------------------------------------------------------------------------*/
+.section3{
+    border-bottom: 1px solid #000;
+    padding-top: 50px;
+    padding-bottom: 20px;
+
+}
+
+.section3 h1{
+    padding-bottom:20px;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.section3 .elem p{
+    width: 600px;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section3 .elem button{
+    border: none;
+    padding: 15px 35px;
+    border-radius: 25px;
+    margin-bottom: 5%;
+    background-color: #3bca6d;
+    font-weight: 800;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.section3 .elem button:hover{
+    border: none;
+    margin-bottom: 5%;
+    padding: 15px 35px;
+    border-radius: 25px;
+    background-color: #3bca6d;
+    font-weight: 800;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.section3 .elem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;align-items: center;
+}
+/*--------------------------------------------------------------------------------------------------------------*/
+
+

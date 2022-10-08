@@ -1,0 +1,184 @@
+/*------------------------------BARRE DE NAVIGATION-------------------------------------------*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav .logo{
+    display: flex;
+    margin-left: 10%;
+}
+
+nav .logo p{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 2%;
+}
+
+nav .liens{
+    display: flex;
+    margin-right: 10%;
+}
+
+nav .liens a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav .liens .left a{
+    color: #fff;
+    margin-right: 30px;
+    transition:color 0.2s linear;
+}
+
+nav .liens .left a:hover{
+    margin-right: 30px;
+    font-weight: bold;
+    color: rgb(30, 215, 96);
+}
+
+nav .liens .right{
+    border-left: 1px solid #c2c2c2;
+}
+
+nav .liens .right a{
+    color: #c2c2c2;
+    padding-left: 40px;
+    transition:color 0.2s linear;
+}
+
+nav .liens .right a:hover{
+    color: rgb(30, 215, 96);
+    padding-left: 40px;
+}
+/*------------------------------FIN DE LA BARRE DE NAVIGATION---------------------------------*/
+
+
+/*------------------------------DEBUT DU PIED DU PAGE---------------------------------------------*/
+footer{
+    
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #000;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: #fff;
+}
+
+footer .logo{
+    display: flex;    
+    margin-left: 5%;
+}
+
+footer .cartes{
+    display: flex;
+    margin-left: 10%;
+}
+
+footer .logo p{
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 5px;
+}
+
+footer .cartes .carte{
+    display: flex;
+    flex-direction: column;
+    margin-top: -4%;
+    margin-right: 10px;
+    margin-left: 10%;
+}
+
+footer .cartes .carte a{
+    text-decoration: none;
+    margin-bottom: 20px;
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+}
+
+footer .cartes .carte a:hover{
+    text-decoration: none;
+    margin-bottom: 20px;
+    color:rgb(30, 215, 96);
+}
+
+footer .cartes .carte h2{
+    color: #918f8f;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+footer .pieds{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%
+}
+
+footer .pieds .droite{
+
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: -20px;
+}
+
+footer .pieds a, footer p{
+    color: #918f8f;
+    text-decoration: none;
+    font-size: 12px;
+    margin-right: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+footer .pieds a:hover{
+    font-size: 12px;
+    text-decoration: none;
+    color: rgb(30, 215, 96);
+}
+footer .service-sociaux{
+    transform:translateY(-60px);
+    margin-left:200px;
+    display:inline-block;
+}
+
+footer .service-sociaux a{
+    margin:0px 10px 0px 10px;
+    background-color:#5d646b;
+    display:inline-block;
+    z-index:-1;
+    border-radius:50%;
+    width:49px;
+    height:49px;
+    transition:background-color 0.4s linear;
+}
+footer .service-sociaux a:hover{
+    background:#1ED760;
+    display:inline-block;
+    z-index:-1;
+    border-radius:50%;
+    width:49px;
+    height:49px;
+}
+footer .service-sociaux a img{
+    width:49px;
+    filter:invert(10%);
+}
+/*
+
+
+
+/*------------------------------FIN DU PIED DU PAGE---------------------------------------------*/
+

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+   <link rel="stylesheet" href="../css/inscription.css">
+    <title>S'inscrire</title>
+</head>
+<body>
+    <div class="all">
+        <header>
+            <img src="../image/Black.png" alt="Spotify" width="150">
+            <h1>Inscrivez-vous gratuitement<br>pour lancer la lecture.</h1>
+        </header>
+
+        <!--INSCRIPTION FACEBOOK-->
+        <div class="facebook">
+            <div class="icon-facebook">
+                <img src="../image/facebook_1.png" alt="facebook">
+            </div>
+            <div class="lien-vers-facebook">
+                <a href="https://accounts.spotify.com/fr/login?method=facebook&continue=https%3A%2F%2Fwww.spotify.com%2Faccount%2Foverview%2F&intent=signup" target="_blank" class="inscrire-sur-facebook">
+                    Inscrivez-vous avec Facebook
+                </a>
+            </div>
+        </div>
+        <!--INSCRIPTION AVEC GOOGLE-->
+    <div class="google">
+        <img src="../image/google.png" alt="google" width="30"> 
+        <a href="https://accounts.spotify.com/fr/login?method=google&continue=https%3A%2F%2Fwww.spotify.com%2Faccount%2Foverview%2F&intent=signup" class="inscription-google">
+            Inscrivez-vous avec Google
+        </a>
+    </div>
+    <div class="separateur">
+        <span class="ligne"></span>
+        ou
+        <span class="ligne"></span>
+    </div>
+    <h4>Inscrivez-vous avec votre adresse e-mail</h4>
+    <form method="post" action="">
+
+        <label for="adresse-mail">Quelle est votre adresse e-mail</label>
+        <br>
+        <input type="email" id="adresse-mail" placeholder="Saisissez votre adresse e-mail">
+        <br>
+        <label for="adresse-mail">Confirmer votre adresse e-mail</label>
+        <br>
+        <input type="email" id="adresse-mail" placeholder="Saisissez de nouveau votre adresse e-mail">
+        <br>
+        <label for="mot-de-pass">Créez un mot de passe</label>
+        <br>
+        <input type="password" id="mot-de-pass" placeholder="Créez un mot de passe">
+        <br>
+        <label for="nom">Comment doit-on vous appeler?</label>
+        <br>
+        <input type="text" id="nom" placeholder="Créez un mot de passe">
+
+        <!--fin des info-->
+        <p>Celui-ci apparaît sur votre profil.</p>
+        
+        <!--date DE NAISSANCE-->
+
+        <div class="date-de-naissance">
+            <h4>Quelle est votre date de naissance?</h4>
+            <div class="class-jour">
+                <label for="jour">Jour</label>
+                         <br>
+                <input type="text" id="jour" placeholder="JJ" >
+            </div>
+            <div class="class-mois">
+                <label for="mois">Mois</label>
+                        <br>
+                <select id="mois">
+                    <option value="mois" disabled selected>Mois</option>
+                    <option value="janvier" >Janvier</option>
+                    <option value="fevrier" >Fevrier</option>
+                    <option value="mars" >Mars</option>
+                    <option value="avril" >Avril</option>
+                    <option value="mai">Mai</option>
+                    <option value="juin">Juin</option>
+                    <option value="juillet">Juillet</option>
+                    <option value="août">Août</option>
+                    <option value="septembre">Septembre</option>
+                    <option value="octobre">Octobre</option>
+                    <option value="novembre">Novembre</option>
+                    <option value="decembre">Decembre</option>
+                </select>
+            </div>
+
+            <div class="class-annee">
+                <label for="annee">Année</label>
+                        <br>
+                <input type="text" id="annee" placeholder="AAAA">
+            </div>
+        </div>
+
+        <!--DEBUT DU SELECTION DE  SEXE-->
+        <h4> Quel est votre sexe?</h4>
+        <div id="sexe">
+            <input type="radio" value="Masculin" name="sexe" id="masculin">
+            <label for="masculin">Masculin</label>
+            <input type="radio" value="Feminin" name="sexe" id="feminin" >
+            <label for="feminin">Feminin</label>
+        </div>
+            <!--FIN DU SELECTION DE SEXE -->
+
+            <input type="checkbox"  id="recevoir">
+            <label for="recevoir">J'accepte de recevoir des actualités et des offres de Spotify</label>
+            <br>
+            <input type="checkbox"  id="confidentialite">
+            <label for="confidentialite">
+                Partagez les données sur mon inscription avec les fournisseurs de contenu de Spotify à des fins de marketing. 
+            </label>
+
+            <!--ACCEPTEZ LES TERMES DE CONTRATS-->
+            <p class="p-avant-dernier">
+                En cliquant sur le bouton d'inscription, vous acceptez les <a href="https://www.spotify.com/fr/legal/end-user-agreement/"> Conditions générales d'utilisation de Spotify</a>.
+
+                <br>
+
+                Pour en savoir plus sur la façon dont Spotify recueille, utilise, partage et protège vos données personnelles,
+                veuillez consulter la <a href="https://www.spotify.com/fr/legal/privacy-policy/">Politique de confidentialité de Spotify</a>. 
+            </p>
+            <button class="inscrire">
+                S'inscrire
+            </button>
+            <p>Vous avez déjà un compte ? <a href="connexion.html" >Connectez-vous.</a></p>
+    </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+body{
+/*Manala marge par défaut*/
+    margin: 0px;       
+    padding: 0px;
+ /*Manala marge par défaut*/
+    height: 100%;
+    width: 100%;
+    background-color: rgb(41, 65, 171);
+    background-image: url("../image/background.svg");
+    background-position:top;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+}
+
+
+/*------------------------------CORPS DE LA PAGE-------------------------------------------*/
+section{
+    color: rgb(30, 215, 96);
+    margin-top: 5%;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+}
+
+section #titre{
+    text-align: center;
+    font-weight: 900;
+    line-height: 1em;
+    font-size: 150px;
+}
+
+section .ens{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section #titre2{
+    text-align: center;
+    font-weight: 200;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+section button{     
+   background-color: rgb(30, 215, 96);
+    border: none;
+    padding: 14px 20px;
+    color: rgb(41, 65, 171);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: none;
+    border-radius: 25px ;
+    cursor: pointer;
+    margin-bottom: 50px;
+    transition: transform 0.08s ease-in;
+}
+
+section button:hover{     
+    margin-bottom: 50px;
+    padding: 14px 20px;
+    color: rgb(41, 65, 171);
+    font-weight: 700;
+    line-height: 20px;
+    border: none;
+    border-radius: 25px ;
+    background-color: rgb(32, 236, 104);
+    text-transform: none;
+    cursor: pointer; 
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in;
+}
+
+
+section button:active{
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in;
+}
+/*------------------------------FIN DU CORPS DE LA PAGE-------------------------------------------*/
+
+

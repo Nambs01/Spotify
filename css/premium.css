@@ -1,0 +1,236 @@
+body{
+   margin:0;
+   padding:0;
+   font-family: Helvetica, Arial, sans-serif;
+}
+:root{
+--padding:0px 50px 0px 50px;
+}
+a{
+    text-decoration:none;
+}
+
+header.bleu{
+    padding: 80px 50px 60px 100px;
+    margin:0;
+    height:500px;
+    background-color: #1d75de;
+    color:white;
+}
+header h1{
+    font-size:50px;
+}
+/*le texte suivant j1 de header*/
+header h1 + p{
+    font-size:25px;
+}
+header p{
+    font-size:20px;
+}
+header a{
+    color:white;
+}
+/*bouton pour commencer sur le header*/
+.commencer{
+   margin:50px 8px 50px 0px;
+    padding:10px;
+    width:200px;
+    height:45px;
+    border-radius:40px;
+    background-color:rgb(20, 19, 19);
+    display:inline-block;
+    line-height:45px;
+    text-align:center;
+    font-size:19px;
+    font-weight:700;
+    cursor:pointer;
+    transition:transform 0.09s linear;
+}
+.commencer:hover{
+    transform:scale(1.05);
+    background-color:rgb(10, 10, 10)
+}
+.commencer:active{
+    transform:scale(1);
+    background-color:rgb(10, 10, 10)
+}
+
+.abonnement{
+    padding:10px;
+    margin:50px 8px 50px 0px;
+    width:300px;
+    height:40px;
+    border-radius:40px;
+    border:3px solid white;
+    background-color:transparent;
+    display:inline-block;
+    line-height:40px;
+    text-align:center;
+    font-size:19px;
+    font-weight:700;
+    cursor:pointer;
+    transition:transform 0.08s linear;
+}
+.abonnement:hover{
+    transform:scale(1.05);
+    background-color:rgba(10, 10, 10,0.1)
+}
+.abonnement:active{
+    transform:scale(1);
+    background-color:rgba(10, 10, 10,0.1)
+}
+header .abonnement + p{
+    font-size:15px;
+}
+header .abonnement + p a{
+    text-decoration:underline;
+}
+header + h1{
+    text-align:center;
+    font-size:50px;
+    padding-bottom:50px;
+    font-weight:bold;
+    font-family:Arial, sans-serif;
+    line-height:70px;
+}
+.raison-premium{
+    margin:50px 0 50vh 0;
+    padding:var(--padding);
+    display:grid;
+    grid-template-rows:20vh;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-column-gap:40px;
+    grid-auto-flow:column;
+}
+.raison-premium article{
+    text-align:center;
+    font-family:Arial;
+}
+.raison-premium article h4::first-letter,p::first-letter{
+    text-transform:uppercase;
+}
+.raison-premium article img{
+    width:150px;
+}
+.raison-premium article h4{
+    font-size:calc(1em + 5px);
+}
+.raison-premium article p{
+    font-size:calc(1em + 1px);
+}
+
+.offre-premium{
+   background-color:#f1f1f2;
+   padding:var(--padding);
+   padding-bottom:50px;
+   padding-top:50px;
+}
+
+.contain-offre{
+    display:flex;
+    margin-bottom:0;
+    flex-direction:row;
+    justify-content:space-evenly;
+    padding:var(--padding);
+}
+article.offre{
+    width:270px;
+    height:700px;
+    padding:15px;
+    margin:5px;
+    border-radius:10px;
+    background-color:white;
+    filter: drop-shadow(-1px 0px 6px rgba(0,0,0,0.3));
+    font-size:calc(13px + 1.2mm);
+}
+.offre h1{
+    opacity:0.9;
+    font-size:30px;
+}
+.offre h1::first-letter{
+text-transform:uppercase;
+}
+.offre h1 + p{
+    opacity:0.95;
+}
+hr{
+    margin:8px 0px 8px 0px
+}
+
+/*========LISTE PFFRE=======*/
+.offre ul{
+    list-style-type:circle;
+    opacity:0.98;
+    font-size:calc(13px + 1.1mm);
+    line-height:20px;
+
+}
+.offre ul + a.bouton-commencer{
+       margin:0;
+         padding:10px 3px 10px 3px;
+         width:270px;
+         height:35px;
+         border-radius:40px;
+         background-color:rgb(20, 19, 19);
+         display:inline-block;
+         line-height:35px;
+         text-align:center;
+         font-size:calc(15px + 0.2mm);
+         font-weight:700;
+         cursor:pointer;
+         color:white;
+         transition:transform 0.08s linear;
+        position:absolute;
+        top:500px;
+        left:12px;
+         
+        }
+.offre ul + a.bouton-commencer:hover{
+    background-color:rgb(10, 10, 10);
+    transform:scale(1.05);
+}  
+.offre ul + a.bouton-commencer:active{
+    background-color:rgb(10, 10, 10);
+    transform:scale(1);
+}  
+a.bouton-commencer + p{
+    font-size:calc(10px + 1mm);
+    text-align: justify;
+    position:absolute;
+    bottom:80px;
+    margin-left:5px;
+    margin-right:13px;
+    opacity:0.8;
+}
+a.bouton-commencer + p#dernier{
+    font-size:calc(10px + 1mm);
+    text-align: justify;
+    position:absolute;
+    bottom:30px;
+    margin-left:5px;
+    margin-right:13px;
+    opacity:0.8;
+}
+a.bouton-commencer + p a{
+    color:#000;
+    text-decoration:underline;
+}
+.mois-gratuit{
+    width: 140px;
+    height: 20px;
+    padding: 3px 0px 3px 0px;
+    line-height: 20px;
+    text-align:center;
+    border-radius:4px;
+    background-color: #1d75de;
+    color:white;
+}
+.titre-offre{
+font-size: 40px;
+text-align:center;
+}
+.paragraphe-apres-titre-offfe{
+    text-align:center;
+    font-size:20px;
+    margin-bottom:80px;
+}
